@@ -1,5 +1,7 @@
 ### Rust wasm
 
+[![Build Status](https://cloud.drone.io/api/badges/davisvansant/rust-wasm/status.svg)](https://cloud.drone.io/davisvansant/rust-wasm)
+
  - https://developer.mozilla.org/en-US/docs/WebAssembly/Rust_to_wasm
 
 Learning Rust and wasm - WIP
