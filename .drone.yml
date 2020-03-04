@@ -1,0 +1,18 @@
+---
+kind: pipeline
+type: docker
+name: default
+
+steps:
+- name: wasm-build
+  image: rust:1.39.0
+  commands:
+  - cargo install wasm-pack
+  - cargo test
+  - wasm-pack build --scope mynpmusername
+- name: docker-build
+  image: plugins/docker
+  settings:
+    repo: davisvansant/rust-wasm
+    dry_run: true
+    purge: false
